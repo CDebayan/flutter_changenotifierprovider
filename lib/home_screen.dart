@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterchangenotifierprovider/example1/counter_screen.dart';
 import 'package:flutterchangenotifierprovider/example2/note_list_screen.dart';
 import 'package:flutterchangenotifierprovider/example3/todo_list_screen.dart';
+import 'package:flutterchangenotifierprovider/example4/login_screen.dart';
 import 'package:flutterchangenotifierprovider/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -20,6 +21,9 @@ class HomeScreen extends StatelessWidget {
             }),
             button("Example 3", (){
               Navigator.pushNamed(context, ToDoListScreen.routeName);
+            }),
+            button("Example 4", (){
+              Navigator.pushNamed(context, LoginScreen.routeName);
             }),
           ],
         ),

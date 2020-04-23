@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutterchangenotifierprovider/example2/note_model.dart';
 import 'package:flutterchangenotifierprovider/example3/model/todo_model.dart';
 import 'package:flutterchangenotifierprovider/example3/response/todo_list_response.dart';
-import 'package:flutterchangenotifierprovider/example3/services/dio_services.dart';
+import 'package:flutterchangenotifierprovider/services/dio_services.dart';
 import 'package:flutterchangenotifierprovider/widgets.dart';
 import 'package:provider/provider.dart';
 

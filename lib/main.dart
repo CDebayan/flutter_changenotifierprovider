@@ -5,6 +5,8 @@ import 'package:flutterchangenotifierprovider/example2/note_list_screen.dart';
 import 'package:flutterchangenotifierprovider/example2/note_notifier.dart';
 import 'package:flutterchangenotifierprovider/example3/notifier/todo_notifier.dart';
 import 'package:flutterchangenotifierprovider/example3/todo_list_screen.dart';
+import 'package:flutterchangenotifierprovider/example4/login_notifier.dart';
+import 'package:flutterchangenotifierprovider/example4/login_screen.dart';
 import 'package:flutterchangenotifierprovider/home_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -18,6 +20,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<CounterNotifier>(create: (_) => CounterNotifier()),
         ChangeNotifierProvider<NoteNotifier>(create: (_) => NoteNotifier()),
         ChangeNotifierProvider<ToDoNotifier>(create: (_) => ToDoNotifier()),
+        ChangeNotifierProvider<LoginNotifier>(create: (_) => LoginNotifier()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -27,6 +30,7 @@ class MyApp extends StatelessWidget {
           CounterScreen.routeName : (context) => CounterScreen(),
           NoteListScreen.routeName : (context) => NoteListScreen(),
           ToDoListScreen.routeName : (context) => ToDoListScreen(),
+          LoginScreen.routeName : (context) => LoginScreen(),
         },
       ),
     );

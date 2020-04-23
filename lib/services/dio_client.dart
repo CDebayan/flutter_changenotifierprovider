@@ -4,7 +4,7 @@ import 'package:dio/dio.dart';
 
 class DioClient {
   static final Dio _dio = Dio();
-  static final String _baseUrl = "http://192.168.0.7/generalapis/scripts/todos/";
+  static final String _baseUrl = "http://192.168.0.7/generalapis/scripts/";
 
   static Dio _invoke() {
     _dio.interceptors
